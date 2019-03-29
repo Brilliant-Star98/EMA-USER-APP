@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_img"
+    tools:context="com.optisoft.emauser.Activity.SignUpActivity">
+
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_100"
+            android:paddingRight="@dimen/dp_100"
+            android:src="@drawable/logo"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topPanel"
+        android:layout_above="@+id/footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_30"
+            android:orientation="vertical">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect_white"
+                app:ccp_contentColor="@color/white"
+                app:ccp_showFullName="true"
+                android:soundEffectsEnabled="true">
+
+            </com.hbb20.CountryCodePicker>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First Name"
+                        android:textSize="@dimen/dp_16"
+                        android:maxLength="20"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="First Name"
+                        app:met_textColor="@color/white"
+                        app:met_textColorHint="@color/off_white"
+                        app:met_underlineColor="@color/white"
+                        app:met_baseColor="@color/off_white"
+                        app:met_primaryColor="@color/white"
+                        app:met_iconPadding="0dp"
+                        app:met_errorColor="@color/red"
+                        app:met_iconRight="@drawable/profile"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Last Name"
+                        android:textSize="@dimen/dp_16"
+                        android:maxLength="20"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Last Name"
+                        app:met_textColor="@color/white"
+                        app:met_textColorHint="@color/off_white"
+                        app:met_underlineColor="@color/white"
+                        app:met_baseColor="@color/off_white"
+                        app:met_primaryColor="@color/white"
+                        app:met_iconPadding="0dp"
+                        app:met_errorColor="@color/red"
+                        app:met_iconRight="@drawable/profile"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Id"
+                    android:textSize="@dimen/dp_16"
+                    android:maxLength="100"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Email Id"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/off_white"
+                    app:met_underlineColor="@color/white"
+                    app:met_baseColor="@color/off_white"
+                    app:met_primaryColor="@color/white"
+                    app:met_iconPadding="0dp"
+                    app:met_errorColor="@color/red"
+                    app:met_iconRight="@drawable/mail"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:textSize="@dimen/dp_16"
+                    android:maxLength="16"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Mobile Number"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/off_white"
+                    app:met_underlineColor="@color/white"
+                    app:met_baseColor="@color/off_white"
+                    app:met_primaryColor="@color/white"
+                    app:met_iconPadding="0dp"
+                    app:met_errorColor="@color/red"
+                    app:met_iconRight="@drawable/call"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:hint="Password"
+                    android:maxLength="16"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/dp_16"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Password"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/off_white"
+                    app:met_underlineColor="@color/white"
+                    app:met_baseColor="@color/off_white"
+                    app:met_primaryColor="@color/white"
+                    app:met_iconPadding="0dp"
+                    app:met_errorColor="@color/red"
+                    app:met_iconRight="@drawable/lock"/>
+
+                <customfonts.MyTextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textColor="@color/off_white"
+                    android:textSize="@dimen/dp_11"
+                    android:text="@string/password_validation_message"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/cnf_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:maxLength="16"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/dp_16"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Confirm Password"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/off_white"
+                    app:met_underlineColor="@color/white"
+                    app:met_baseColor="@color/off_white"
+                    app:met_primaryColor="@color/white"
+                    app:met_iconPadding="0dp"
+                    app:met_errorColor="@color/red"
+                    app:met_iconRight="@drawable/lock"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <customfonts.MyTextViewMedium
+                    android:id="@+id/select_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp_16"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/dp_10"
+                    android:background="@drawable/rounded_editbox"
+                    android:text="Select Location"/>
+
+                <customfonts.MyTextViewMedium
+                    android:id="@+id/selected_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textSize="@dimen/dp_16"
+                    android:textColor="@color/white"
+                    android:text=""/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/agent_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/verify"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:maxLength="8"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:hint="Agent Code"
+                    android:inputType="textCapCharacters"
+                    android:textSize="@dimen/dp_16"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Agent Code"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/off_white"
+                    app:met_underlineColor="@color/white"
+                    app:met_baseColor="@color/off_white"
+                    app:met_primaryColor="@color/white"
+                    app:met_iconPadding="0dp"
+                    app:met_errorColor="@color/red"/>
+
+                <customfonts.MyTextViewMedium
+                    android:id="@+id/verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:textAllCaps="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp_8"
+                    android:textColor="@color/white"
+                    android:text="VERIFY"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_ly"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customfonts.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_14"
+                    android:paddingTop="@dimen/dp_5"
+                    android:text="AJENT Name : "/>
+
+                <customfonts.MyTextViewMedium
+                    android:id="@+id/agent_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_14"
+                    android:paddingTop="@dimen/dp_5"
+                    android:text="Test TESt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_16">
+
+                <customfonts.MyTextViewMedium
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_12"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:paddingLeft="@dimen/dp_50"
+                    android:paddingRight="@dimen/dp_50"
+                    android:background="@drawable/rounded_button_green"
+                    android:text="Sign up"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <customfonts.MyTextViewMedium
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_8"
+            android:textSize="@dimen/dp_16"
+            android:text="@string/alredy_have_an_account"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

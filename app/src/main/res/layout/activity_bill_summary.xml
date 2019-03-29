@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BillSummaryActivity"
+    android:background="@drawable/back_img">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_2"
+                android:layout_margin="@dimen/dp_2"
+                android:id="@+id/pdf_layout">
+
+
+            <FrameLayout
+                android:layout_margin="@dimen/dp_10"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/billtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="49dp"
+                        >
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="@dimen/dp_22"
+                            android:layout_height="@dimen/dp_22"
+                            android:src="@drawable/order"
+                            />
+                        <customfonts.MyTextViewMedium
+                            android:id="@+id/bill_type"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:text="Electricity Bill"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_17"
+                            android:gravity="center"
+                            android:layout_marginLeft="16dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/items"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:layout_below="@+id/billtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:id="@+id/dollar"
+                            android:layout_width="90dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/dollar"
+                            />
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="6dp"
+                            android:paddingLeft="@dimen/dp_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/name"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ankit Sharma-"
+                                android:textSize="15dp"
+                                android:textColor="@color/red"
+                                />
+
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/address"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="North Avenue,Jaipur,Rajasthan"
+                                android:textSize="15dp"
+                                android:textColor="@color/red"/>
+
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/mail"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="ankit123@yahoo.com "
+                                android:textSize="15dp"
+                                android:textColor="@color/red"/>
+
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/phone"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mob. 99299554281"
+                                android:textSize="15dp"
+                                android:textColor="@color/red" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/date"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_below="@id/items"
+                        android:orientation="vertical"
+                        >
+
+                        <customfonts.MyTextViewMedium
+                            android:id="@+id/invoice_id"
+                            android:paddingTop="@dimen/dp_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Invoice Id : INVID"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+                        <customfonts.MyTextViewMedium
+                            android:id="@+id/generate_date"
+                            android:paddingTop="@dimen/dp_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Generated Date : 21-02-2018"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+                        <customfonts.MyTextViewMedium
+                            android:id="@+id/due_date"
+                            android:paddingTop="@dimen/dp_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Due Date : 30-02-2018"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+                    <View
+                        android:id="@+id/div"
+                        android:layout_below="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/divider"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        >
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/div"
+                        android:id="@+id/total"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:padding="@dimen/dp_3"
+                            android:layout_margin="@dimen/dp_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <customfonts.MyTextViewMedium
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bill Amount"
+                                android:textColor="@color/black"
+                                />
+
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/bill_amount"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$ 00.00"
+                                android:paddingRight="@dimen/dp_5"
+                                android:layout_alignParentRight="true"
+
+                                android:textColor="@color/black"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_margin="@dimen/dp_5"
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/dp_3"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <customfonts.MyTextViewMedium
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bill Unit"
+                                android:textColor="@color/black"
+                                />
+
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/bill_unit"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:paddingRight="@dimen/dp_5"
+                                android:layout_alignParentRight="true"
+
+                                android:textColor="@color/black"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:padding="@dimen/dp_3"
+                            android:layout_margin="@dimen/dp_5"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <customfonts.MyTextViewMedium
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bill Rate"
+                                android:textColor="@color/black"
+                                />
+
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/bill_rate"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4"
+                                android:paddingRight="@dimen/dp_5"
+                                android:layout_alignParentRight="true"
+
+                                android:textColor="@color/black"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:padding="@dimen/dp_3"
+                            android:layout_margin="@dimen/dp_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <customfonts.MyTextViewMedium
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Late fee"
+                                android:textColor="@color/black"
+                                />
+
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/late_fee"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$ 00.00"
+                                android:paddingRight="@dimen/dp_5"
+                                android:layout_alignParentRight="true"
+
+                                android:textColor="@color/black"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/div1"
+                        android:layout_below="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/divider"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        >
+
+                    </View>
+
+
+                    <LinearLayout
+                        android:id="@+id/l2"
+                        android:layout_below="@+id/div1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/dp_5"
+                        android:padding="@dimen/dp_3">
+                        <RelativeLayout
+                            android:padding="@dimen/dp_3"
+                            android:layout_margin="@dimen/dp_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <customfonts.MyTextViewMedium
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Amount"
+                                android:textColor="@color/black"
+                                />
+
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/total_amount"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$ 00.00"
+                                android:paddingRight="@dimen/dp_5"
+                                android:layout_alignParentRight="true"
+
+                                android:textColor="@color/black"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+            </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@id/l2">
+
+                        <customfonts.MyTextViewMedium
+                            android:id="@+id/paynowbtn"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_16"
+                            android:layout_marginTop="@dimen/dp_16"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/rounded_button_green"
+                            android:paddingLeft="@dimen/dp_40"
+                            android:paddingRight="@dimen/dp_40"
+                            android:textSize="@dimen/dp_18"
+                            android:textColor="@color/white"
+                            android:paddingTop="@dimen/dp_10"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:text="Pay Now"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp_10"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/paidbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_marginRight="@dimen/dp_8"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/pay_buttons"
+                                android:textSize="@dimen/dp_18"
+                                android:textColor="@color/white"
+                                android:paddingTop="@dimen/dp_10"
+                                android:paddingBottom="@dimen/dp_10"
+                                android:text="Download Invoice"/>
+
+
+
+                            <customfonts.MyTextViewMedium
+                                android:id="@+id/pdf_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/pay_buttons"
+                                android:textSize="@dimen/dp_18"
+                                android:textColor="@color/white"
+                                android:paddingTop="@dimen/dp_10"
+                                android:paddingBottom="@dimen/dp_10"
+                                android:text="Download Bill"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_back_color"
+        app:cardCornerRadius="@dimen/dp_5"
+        android:elevation="@dimen/dp_5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/main_card_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_12"
+                android:background="@color/card_back_color">
+                <LinearLayout
+                    android:id="@+id/img_ly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/img_payment"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_50"
+                        android:src="@drawable/car32_4"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_60"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ly_payment"
+                    android:layout_toRightOf="@+id/img_ly"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/item_car_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In"
+                        android:paddingBottom="@dimen/dp_1"
+                        android:textColor="@color/edit_text_line"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_146"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ly_payment"
+                    android:layout_toRightOf="@+id/img_ly"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/item_car_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/dp_1"
+                        android:text="2019-03-21"
+                        android:textColor="@color/edit_text_line" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/main_card_1"
+                android:background="@color/white"></LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

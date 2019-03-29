@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.optisoft.emauser.Activity.ContactUsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_img"
+            android:padding="@dimen/dp_10">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/footer">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_20"
+                    android:id="@+id/lay1"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/tv_dis_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        android:textSize="@dimen/dp_20"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:text="Send distress message to your estate agent"/>
+
+                    <EditText
+                        android:id="@+id/et_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:padding="@dimen/dp_10"
+                        android:hint="Subject"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:background="@drawable/rounded_editbox"/>
+
+
+                    <EditText
+                        android:id="@+id/et_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_10"
+                        android:gravity="top|left"
+                        android:hint="Message"
+                        android:inputType="textMultiLine"
+                        android:minLines="10"
+                        android:maxLines="10"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_editbox"/>
+
+                    <LinearLayout
+                        android:id="@+id/ly_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="horizontal">
+
+                        <customfonts.MyTextViewMedium
+                            android:id="@+id/select_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dp_16"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/dp_10"
+                            android:background="@drawable/rounded_editbox"
+                            android:text="Select Location"/>
+
+                        <customfonts.MyTextViewMedium
+                            android:id="@+id/selected_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:textSize="@dimen/dp_16"
+                            android:textColor="@color/white"
+                            android:text=""/>
+                    </LinearLayout>
+
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/btn_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_16"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:padding="@dimen/dp_14"
+                        android:background="@drawable/rounded_button_green"
+                        android:text="Submit"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <customfonts.MyTextViewMedium
+                    android:paddingTop="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="+91-9929554281"/>
+
+                <customfonts.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Contact us - info@optisoft.in"/>
+
+                <customfonts.MyTextViewMedium
+                    android:paddingTop="@dimen/dp_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Address : North Avenue , Sikar Road "/>
+
+                <customfonts.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/dp_6"
+                    android:text="Jaipur , Rajasthan "/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

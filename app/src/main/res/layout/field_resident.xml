@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_5"
+        app:cardElevation="@dimen/dp_5"
+        android:layout_margin="@dimen/dp_5"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/res_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/gender"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dp_16"
+                    app:met_baseColor="@color/off_white"
+                    app:met_errorColor="@color/red"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Full Name"
+                    app:met_iconPadding="0dp"
+                    app:met_primaryColor="@color/white"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/off_white"
+                    app:met_underlineColor="@color/white" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/res_fullname"
+                    android:layout_alignBottom="@+id/res_fullname"
+                    android:layout_alignParentEnd="true"
+                    android:entries="@array/gender" />
+
+                <Button
+                    android:id="@+id/delete_button"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:drawable/ic_delete"
+                    android:onClick="onDelete" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/primary_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:hint="Primary Contact"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dp_16"
+                    app:met_baseColor="@color/off_white"
+                    app:met_errorColor="@color/red"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Primary Contact"
+                    app:met_iconPadding="0dp"
+                    app:met_primaryColor="@color/white"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/off_white"
+                    app:met_underlineColor="@color/white" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/secondary_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:hint="Secondary Contact"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dp_16"
+                    app:met_baseColor="@color/off_white"
+                    app:met_errorColor="@color/red"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Secondary Contact"
+                    app:met_iconPadding="0dp"
+                    app:met_primaryColor="@color/white"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/off_white"
+                    app:met_underlineColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

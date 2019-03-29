@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/back_img"
+tools:context="com.optisoft.emauser.Activity.MpesaActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:textSize="@dimen/dp_16"
+                android:maxLength="16"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Mobile Number"
+                app:met_textColor="@color/white"
+                app:met_textColorHint="@color/off_white"
+                app:met_underlineColor="@color/white"
+                app:met_baseColor="@color/off_white"
+                app:met_primaryColor="@color/white"
+                app:met_iconPadding="0dp"
+                app:met_errorColor="@color/red"
+                app:met_iconRight="@drawable/call"/>
+
+        </LinearLayout>
+         <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Amount"
+                        android:textSize="@dimen/dp_16"
+                        android:maxLength="16"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:text="1"
+                        android:singleLine="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_floatingLabelText="Amount"
+                        app:met_textColor="@color/white"
+                        app:met_textColorHint="@color/off_white"
+                        app:met_underlineColor="@color/white"
+                        app:met_baseColor="@color/off_white"
+                        app:met_primaryColor="@color/white"
+                        app:met_iconPadding="0dp"
+                        app:met_errorColor="@color/red"
+                        app:met_iconRight="@drawable/call"/>
+
+                </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_16">
+
+            <customfonts.MyTextViewMedium
+                android:id="@+id/pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12"
+                android:paddingLeft="@dimen/dp_50"
+                android:paddingRight="@dimen/dp_50"
+                android:background="@drawable/rounded_button_green"
+                android:text="Pay"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+

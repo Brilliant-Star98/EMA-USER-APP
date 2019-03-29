@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "467908233781",
+    "firebase_url": "https://notificationtest-be9a9.firebaseio.com",
+    "project_id": "notificationtest-be9a9",
+    "storage_bucket": "notificationtest-be9a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467908233781:android:76984a56b6db327b",
+        "android_client_info": {
+          "package_name": "com.optisoft.emauser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467908233781-2djh96mk98dk7nmrjj1lqo4l1a9cuoq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.optisoft_a.newdesignproject",
+            "certificate_hash": "dd0347bc884774fbd738d31d642346dfac2ae225"
+          }
+        },
+        {
+          "client_id": "467908233781-6gu4m24e2cenpqsdqhbsqktomq2bvfc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTloHbbg-l_BIquNiQAHZR59rmxk7C6AU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467908233781-er2c4mvq2tjbahugjpj9vkotocap5ts0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.optisoft.Notifications10Swift"
+              }
+            },
+            {
+              "client_id": "467908233781-6gu4m24e2cenpqsdqhbsqktomq2bvfc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467908233781:android:7e6163f79f71da92",
+        "android_client_info": {
+          "package_name": "optisoft.in.shopperapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467908233781-pgk0480ukd99aha104kp28eso01g5jqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "optisoft.in.shopperapp",
+            "certificate_hash": "8ae8966beb237ce09a3ce0ceaf6eafa780fc8b50"
+          }
+        },
+        {
+          "client_id": "467908233781-6gu4m24e2cenpqsdqhbsqktomq2bvfc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTloHbbg-l_BIquNiQAHZR59rmxk7C6AU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467908233781-er2c4mvq2tjbahugjpj9vkotocap5ts0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.optisoft.Notifications10Swift"
+              }
+            },
+            {
+              "client_id": "467908233781-6gu4m24e2cenpqsdqhbsqktomq2bvfc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img"
+    tools:context="com.optisoft.emauser.Activity.ListVisitorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:hint="Search By Date"
+                android:textSize="@dimen/dp_16"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:maxLength="20"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Search By Date"
+                app:met_textColor="@color/white"
+                app:met_textColorHint="@color/off_white"
+                app:met_underlineColor="@color/white"
+                app:met_baseColor="@color/off_white"
+                app:met_primaryColor="@color/white"
+                app:met_iconPadding="0dp"
+                app:met_errorColor="@color/red"
+                app:met_iconRight="@drawable/calendar"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:hint="Search Visitor..."
+                android:textSize="@dimen/dp_16"
+                android:maxLength="20"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Search Visitor..."
+                app:met_textColor="@color/white"
+                app:met_textColorHint="@color/off_white"
+                app:met_underlineColor="@color/white"
+                app:met_baseColor="@color/off_white"
+                app:met_primaryColor="@color/white"
+                app:met_iconPadding="0dp"
+                app:met_errorColor="@color/red"
+                app:met_iconRight="@android:drawable/ic_menu_search"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:tint="@color/white"
+                android:src="@drawable/nodata"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_8"
+                tools:itemCount="5"
+                tools:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_visitor"
+                tools:orientation="vertical"
+                tools:scrollbars="vertical" >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

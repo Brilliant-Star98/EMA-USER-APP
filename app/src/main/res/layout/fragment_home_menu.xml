@@ -1,0 +1,506 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.optisoft.emauser.Fragments.HomeMenuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_20"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user"
+                    android:tint="@color/white"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1.2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_8"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="User Name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_16"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91-9898989898"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_10"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/edit_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:background="@color/colorAccent"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_3"
+                        android:paddingBottom="@dimen/dp_3"
+                        android:text="Edit Profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_14"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ly2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_16"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_business"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <customfonts.MyTextViewMedium
+                    android:id="@+id/add_your_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/dp_14"
+                    android:text="My Account"
+                    android:textAllCaps="true"
+                    android:textColor="@color/heading_color" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@color/heading_divider"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_5"
+                        android:src="@drawable/notification"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/notification_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="Notification"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:padding="@dimen/dp_2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_5"
+                        android:src="@drawable/nav_due"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/my_dues_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="Current Bill"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_5"
+                        android:src="@drawable/nav_payment"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/payment_history_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="Payment History"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_5"
+                        android:src="@drawable/nav_car"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/veicle_history_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="Vehicle   History"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_5"
+                        android:src="@drawable/nav_list_visitor"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/reserve_visitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="Reserved  visitors"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_3"
+                        android:src="@drawable/nav_distress"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/tv_distress_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="Distress message"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_5"
+                        android:src="@drawable/nav_contact"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/contact_us_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="Contact Us"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_agent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_3"
+                        android:src="@drawable/nav_distress"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/tv_distress_message_agent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="Distress messages"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_5"
+                        android:src="@drawable/nav_contact"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/contact_us_tv_agent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="Contact Requests"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_guard"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_3"
+                        android:src="@drawable/nav_add_user"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/tv_add_visitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="Add Visitors"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:tint="@color/white"
+                        android:padding="@dimen/dp_5"
+                        android:src="@drawable/nav_user_list"/>
+
+                    <customfonts.MyTextViewMedium
+                        android:id="@+id/tv_list_visitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_8"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/dp_14"
+                        android:maxLines="1"
+                        android:text="List Visitors"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_8"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center_vertical"
+                    android:tint="@color/white"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/nav_logout"/>
+
+                <customfonts.MyTextViewMedium
+                    android:id="@+id/logout_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_8"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/dp_14"
+                    android:maxLines="1"
+                    android:text="LOGOUT"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textAppearance="?attr/textAppearanceListItem" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

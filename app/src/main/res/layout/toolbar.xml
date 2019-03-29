@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menuToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_margin="0dp"
+    android:elevation="@dimen/dp_10"
+    android:background="@color/colorPrimary"
+    android:contentInsetLeft="10dp"
+    android:contentInsetRight="10dp"
+    android:contentInsetStart="10dp"
+    android:minHeight="?attr/actionBarSize"
+    android:padding="0dp"
+    app:contentInsetLeft="10dp"
+    app:contentInsetRight="10dp"
+    app:contentInsetStart="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:tint="@color/white"
+            android:paddingRight="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:id="@+id/drawer" />
+
+        <customfonts.MyTextViewMedium
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAllCaps="true"
+            android:layout_toRightOf="@+id/drawer"
+            android:layout_toLeftOf="@+id/menu"
+            android:padding="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:textSize="@dimen/dp_20"
+            android:gravity="left|center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:visibility="gone"
+            android:tint="@color/white"
+            android:padding="@dimen/dp_6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/nav_logout"
+            android:layout_gravity="right" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

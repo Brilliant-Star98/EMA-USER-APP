@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#344376</color>
+    <color name="colorPrimary">#3e519b</color>
+    <color name="colorAccent">#22e5b6</color>
+    <color name="divider">#656b9b</color>
+    <color name="heading_color">#6e74a4</color>
+    <color name="heading_divider">#464f70</color>
+    <color name="notification_back">#ebebeb</color>
+    <color name="description_tv_clr">#646464</color>
+
+
+
+
+    <color name="blue">#394f91</color>
+    <color name="toolbar_color">#3d4e81</color>
+    <color name="black_transparent">#66000000</color>
+    <color name="middle_black_transparent">#84000000</color>
+    <color name="business_black_transparent">#de000000</color>
+    <color name="bottom_sheet">#bb000000</color>
+    <color name="white">#ffffff</color>
+    <color name="off_white">#f7d4d3d3</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000</color>
+    <color name="splash_black">#030B19</color>
+    <color name="cardcolor">#d9d7d7</color>
+    <color name="card">#e9e9e9</color>
+    <color name="heading">#f5f0f0</color>
+    <color name="popup_background">#2d303f</color>
+    <color name="card_back_color">#273454</color>
+    <color name="profile_div">#3d3d3d</color>
+    <color name="edit_text_line">#d5d4d2</color>
+    <color name="btn_color">#428bca</color>
+    <color name="dark_blue">#1d2869</color>
+    <color name="light_blue">#57699e</color>
+    <color name="blue_demo">#7891d9</color>
+    <color name="background_header">#646b96</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#d9efeded</color>
+    <color name="navigationBarColor">#ee2a29</color>
+    <color name="dividercolour">#d6979595</color>
+    <color name="textColor">#0d0d0d</color>
+    <color name="colortext">#100b20</color>
+    <color name="colorhint">#a9aaac</color>
+    <color name="dropdown">#73787b</color>
+    <color name="basecolor">#ee2a29</color>
+    <color name="red_drake">#990000</color>
+    <color name="green">#10f427</color>
+    <color name="orange">#FF9900</color>
+    <color name="popup_bg">#fcdec1</color>
+    <color name="spinner_bg_color">#fdf9f2</color>
+    <color name="red">#d7001f</color>
+    <color name="text_hint">#6d6d6d</color>
+    <color name="box_line">#ffad00</color>
+    <color name="box_line_shado">#d2f7ae13</color>
+    <color name="text">#515050</color>
+    <color name="sub_title">#fcaf29</color>
+</resources>
